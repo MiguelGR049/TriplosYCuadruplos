@@ -4,11 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Triplos y Cuadruplos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <script src="./dist/bundle.js"></script>
+
+    <div class="container mt-4">
+        <div class="row mb-3 justify-content-center">
+            <div class="card justify-content-center text-center p-4">
+                <h1 class="fw-bold text-center">Triplos y Cuadruplos</h1>
+                <div class="card-body row justify-content-center">
+
+                    <label class="fw-bold" for="operacion">Ingresa una operacion</label>
+                    <div class="d-flex justify-content-between mb-3">
+                        <select class="form-select me-1" aria-label="Default select example">
+                            <option selected>Seleccionar</option>
+                            <option value="triplos">Triplos</option>
+                            <option value="cuadruplos">Cuadruplos</option>
+                            <option value="ambas">Ambas</option>
+                        </select>
+                        <input name="operacion" id="operacion" class="form-control" placeholder="Ejemplo: 2+2/5">
+                    </div>
+
+                    <button id="btn_resolver" class="btn btn-primary mb-3 w-50">Resolver</button>
+                    
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="col-6 me-1">
+                            <label class="fw-bold" for="historial">Historial</label>
+                            <div id="historial" class="form-control me-1"></div>
+                        </div>
+                        <div class="col-6">
+                            <label class="fw-bold" for="operaciones">operaciones</label>
+                            <div id="operaciones" class="form-control"></div>
+                        </div>
+                    </div>
+                    <input type="text" id="resultado" class="form-control mb-3 w-50" readonly placeholder="Resultado">
+                    
+
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-6">
+                            <button id="btn_limpiar" class="btn btn-warning w-100">Limpiar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./bundle.js"></script>
 </body>
 
 </html>
