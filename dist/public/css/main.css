@@ -1,0 +1,82 @@
+body {
+    background-image: url('../img/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* Adorno card */
+.card {
+    width: 45rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    background: linear-gradient(135deg, #2d3a9b5a, #7e48b3);
+    /* Gradiente azul a morado */
+    border-radius: 15px;
+    position: relative;
+    padding: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    /* Sombra para dar profundidad */
+}
+
+select.form-select{
+    width: 10rem;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#operaciones {
+    min-height: 220px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#historial {
+    min-height: 220px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Ajustar la fuente en el contenido de la tarjeta */
+.content {
+    color: white;
+    /* Color blanco para el texto en la tarjeta */
+    font-size: 1.2rem;
+}
+
+.corner {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.content {
+    text-align: center;
+}
+
+/* Estilo de los inputs */
+input.form-control {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Fondo transparente para los inputs */
+    color: #000000;
+    /* Texto blanco dentro del input */
+    border: 2px solid #7e48b3;
+    /* Borde morado para los inputs */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra sutil */
+}
+
+/* Cuando el input está enfocado */
+input.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Fondo más claro al hacer focus */
+}
+
+/* Modificación del texto de los labels */
+label {
+    color: #ffeb3b;
+    /* Color amarillo para los labels */
+    font-weight: bold;
+    /* Resaltar el texto */
+}
